@@ -24,7 +24,7 @@ const ProfilePage = () => {
                 <div className="h-24 bg-emerald-600 w-full"></div>
                 
                 <div className="flex flex-col items-center p-8 pt-0">
-                    <Avatar
+                    <img
                         src={user?.image || `https://ui-avatars.com/api/?name=${user?.name || 'User'}&background=10b981&color=fff`} 
                         alt="User Avatar" 
                         className="h-24 w-24 -mt-12 rounded-full border-4 border-white bg-white shadow-md mb-4"
@@ -35,7 +35,7 @@ const ProfilePage = () => {
                         <p className="text-emerald-700 font-medium">{user?.email}</p>
                     </div>
 
-                    {/* Use the standalone Modal component */}
+                   
                    <UpdateUserModal/>
                 </div>
             </Card>
