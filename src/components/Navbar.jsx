@@ -48,13 +48,13 @@ const Navbar = () => {
                                     className="text-red-500 hover:text-red-600 transition-colors"
                                     onClick={() => signOut()}
                                 >
-                                    Sign Out
+                                    Log Out
                                 </button>
                             </>
                         ) : (
                             <>
-                                <Link className="hover:text-emerald-500 transition-colors" href="/auth/signin">Sign In</Link>
-                                {/* Added Register Button */}
+                                <Link className="hover:text-emerald-500 transition-colors" href="/auth/signin">Log In</Link>
+                               
                                 <Link 
                                     className="rounded-md bg-emerald-600 px-4 py-2 text-white hover:bg-emerald-700 transition-colors" 
                                     href="/auth/register"

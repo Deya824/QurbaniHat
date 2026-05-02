@@ -11,7 +11,7 @@ const Footer = () => {
                         <div className="flex items-center gap-2">
                             <span className="text-2xl">🐂</span>
                             <Link href="/" className="font-bold text-2xl text-white">
-                                QurbaniHat
+                                About Us
                             </Link>
                         </div>
                         <p className="text-sm leading-6 text-emerald-300 max-w-xs">

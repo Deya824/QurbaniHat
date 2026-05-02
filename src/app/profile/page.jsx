@@ -5,6 +5,7 @@ import { useSession } from "@/lib/auth-client";
 import { Avatar, Card } from "@heroui/react";
 
 import 'animate.css/animate.min.css';
+import Link from "next/link";
 
 const ProfilePage = () => {
     const { data, isPending } = useSession();
@@ -36,8 +37,9 @@ const ProfilePage = () => {
                         <p className="text-emerald-700 font-medium">{user?.email}</p>
                     </div>
 
-                   
-                   <UpdateUserModal/>
+                   <Link href="/profile/update">
+                   <button className="btn btn-active">Update</button>
+                </Link>
                 </div>
             </Card>
         </div>
