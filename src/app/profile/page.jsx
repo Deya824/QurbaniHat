@@ -1,6 +1,6 @@
 'use client';
 
-import { UpdateUserModal } from "@/components/UpdateUserModal";
+
 import { useSession } from "@/lib/auth-client";
 import { Avatar, Card } from "@heroui/react";
 
