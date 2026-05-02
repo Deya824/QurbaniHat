@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Wireless Noise-Canceling Headphones",
+      "price": 199.99,
+      "category": "Electronics",
+      "description": "Over-ear headphones with active noise cancellation and 30-hour battery life."
+    },
+    {
+      "id": "2",
+      "name": "Ergonomic Office Chair",
+      "price": 149.50,
+      "category": "Furniture",
+      "description": "Adjustable office chair with lumbar support and breathable mesh back."
+    },
+    {
+      "id": "3",
+      "name": "Stainless Steel Water Bottle",
+      "price": 24.99,
+      "category": "Sports & Outdoors",
+      "description": "Double-wall vacuum insulated water bottle, keeps drinks cold for 24 hours."
+    },
+    {
+      "id": "4",
+      "name": "Mechanical Gaming Keyboard",
+      "price": 89.99,
+      "category": "Electronics",
+      "description": "RGB backlit mechanical keyboard with tactile blue switches."
+    },
+    {
+      "id": "5",
+      "name": "Organic Arabica Coffee Beans",
+      "price": 18.00,
+      "category": "Groceries",
+      "description": "1 lb bag of whole bean organic Arabica coffee, medium roast."
+    }
+  ]
+}
