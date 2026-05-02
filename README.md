@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🐄 Qurbani Livestock Management System
 
-## Getting Started
+A full-stack livestock booking and management application designed for a seamless Qurbani experience. This platform allows users to browse, view details, and book livestock while managing their profiles with secure authentication.
 
-First, run the development server:
+**Live URL:** [Insert Your Live Deployment URL Here]
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Purpose
+The purpose of this project is to provide a user-friendly digital marketplace for Qurbani animals. It simplifies the process of finding healthy livestock by offering detailed specifications (weight, breed, price) and a secure booking system, ensuring transparency and ease for both buyers and sellers.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ Key Features
 
-## Learn More
+*   **Secure Authentication**: Fully integrated authentication using **Better Auth**, supporting Email/Password registration and **Google Social Login**.
+*   **Dynamic Animal Directory**: A public catalog of available livestock with real-time fetching from a JSON data source.
+*   **Protected Details & Booking**: Private routes for viewing deep details and a specialized **DaisyUI Modal** for booking livestock.
+*   **User Profile Management**: A dedicated private profile page featuring a custom update form to modify user display names and profile photos.
+*   **Responsive UI/UX**: Built with **HeroUI** and **Tailwind CSS** for a mobile-first, aesthetic "emerald-green" theme.
+*   **Modern State Handling**: Utilizes Next.js 15 `loading.jsx` with animated spinners and custom `not-found` pages for a professional feel.
+*   **Interactive Notifications**: Integrated **React Hot Toast** for real-time feedback on logins, registrations, and profile updates.
+*   **Engaging Animations**: Leverages **Animate.css** for smooth page transitions and entry effects.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Tech Stack & NPM Packages
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### **Core Frameworks**
+*   **Next.js 15**: React framework for server-side rendering and routing.
+*   **Tailwind CSS**: Utility-first CSS framework for styling.
 
-## Deploy on Vercel
+### **Authentication**
+*   **Better Auth**: For managing sessions, social logins, and user updates.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### **UI Components & Icons**
+*   **@heroui/react**: Advanced UI components for cards, buttons, and inputs.
+*   **DaisyUI**: Tailwind CSS component library for modals and spinners.
+*   **React Icons**: High-quality vector icons (BoxIcons/Bi) for the user interface.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### **Utilities**
+*   **React Hot Toast**: For accessible and customizable toast notifications.
+*   **Animate.css**: For ready-to-use cross-browser animations.
+
+---
+
+## 📦 Installation & Setup
+
+1.  **Clone the repository**:
+    ```bash
+    git clone [https://github.com/your-username/qurbani-management.git](https://github.com/your-username/qurbani-management.git)
+    ```
+
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
+
+3.  **Configure Environment Variables**:
+    Create a `.env` file in the root directory and add your credentials:
+    ```env
+    BETTER_AUTH_SECRET=your_secret
+    NEXT_PUBLIC_BASE_URL=http://localhost:3000
+    GOOGLE_CLIENT_ID=your_id
+    GOOGLE_CLIENT_SECRET=your_secret
+    ```
+
+4.  **Run the development server**:
+    ```bash
+    npm run dev
+    ```
+
+5.  **Build for production**:
+    ```bash
+    npm run build
+    ```
+
+---
+
+## 📄 License
+This project was developed as part of a technical assignment for Rajshahi University of Engineering & Technology (RUET).

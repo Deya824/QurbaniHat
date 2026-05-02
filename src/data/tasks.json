@@ -76,5 +76,19 @@
     "description": "Healthy sheep, fully vaccinated and ready for Qurbani.",
     "image": "https://images.unsplash.com/photo-1484557985045-edf25e08da73?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     "category": "Small Animal"
+  },
+  {
+    "id": 7,
+    "name": "Gir Bull",
+    "type": "Cow",
+    "breed": "Gir",
+    "price": 275000,
+    "weight": 480,
+    "age": 3.5,
+    "location": "Mymensingh",
+    "description": "Strong Gir breed bull with high-quality meat yield and gentle behavior.",
+    "image": "https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=800&q=80",
+    "category": "Large Animal"
   }
+  
 ]
