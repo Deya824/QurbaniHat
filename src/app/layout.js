@@ -1,9 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
 import NextThemeProvider from "@/provider/NextThemeProvider";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,11 +27,21 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground">
-        <NextThemeProvider attribute="data-theme" defaultTheme="system" enableSystem>
-         <Navbar></Navbar>
-          <main>{children}</main>
-          <Footer/>
+      {/* Add suppressHydrationWarning to the body tag too! */}
+      <body className="min-h-full flex flex-col bg-background text-foreground" suppressHydrationWarning>
+        <NextThemeProvider attribute="class" defaultTheme="system" enableSystem>
+         <Navbar />
+         <Toaster
+            position="bottom-right" 
+            toastOptions={{
+              className: 'bg-white text-emerald-900 border border-emerald-100 shadow-lg',
+              success: {
+                iconTheme: { primary: '#10b981', secondary: 'white' },
+              },
+            }}
+          />
+          <main >{children}</main>
+          <Footer />
         </NextThemeProvider>
       </body>
     </html>

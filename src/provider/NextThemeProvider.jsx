@@ -1,9 +1,10 @@
 "use client";
 import { ThemeProvider } from "next-themes";
 
-const NextThemeProvider = ({ children }) => {
+const NextThemeProvider = ({ children, ...props }) => {
     return (
-        <ThemeProvider attribute="class" defaultTheme="light">
+        // Spread the ...props here so it receives the settings from layout.js
+        <ThemeProvider {...props}>
             {children}
         </ThemeProvider>
     );

@@ -5,6 +5,7 @@ import { Button, Description, FieldError, Form, Input, InputGroup, Label, TextFi
 import { useState } from "react";
 
 const SignInPage = () => {
+  
     const [isVisible, setIsVisible] = useState(false);
     const onSubmit = async (e) => {
         e.preventDefault();
@@ -68,11 +69,9 @@ const SignInPage = () => {
                 <div className="flex gap-2">
                     <Button type="submit">
                         <Check />
-                        Submit
+                        Sign In
                     </Button>
-                    <Button type="reset" variant="secondary">
-                        Reset
-                    </Button>
+                    
                 </div>
             </Form>
         </div>
