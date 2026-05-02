@@ -17,9 +17,9 @@ const AnimalsDetailspage = async ({ params }) => {
     });
     const user = session?.user;
     
-    if (!user) {
-       redirect(`/auth/signin?callbackUrl=/animals/${id}`);
-    }
+    // if (!user) {
+    //    redirect(`/auth/signin?callbackUrl=/animals/${id}`);
+    // }
 
     if (!animal) {
         notFound();
