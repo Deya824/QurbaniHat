@@ -24,6 +24,7 @@ const ProfilePage = () => {
                 <div className="h-24 bg-emerald-600 w-full"></div>
                 
                 <div className="flex flex-col items-center p-8 pt-0">
+                    
                     <img
                         src={user?.image || `https://ui-avatars.com/api/?name=${user?.name || 'User'}&background=10b981&color=fff`} 
                         alt="User Avatar" 

@@ -36,12 +36,13 @@ const Navbar = () => {
                     <div className="flex items-center gap-4 text-sm font-medium">
                         {user ? (
                             <>
-                                
+                               <Link href="/profile">
                                 <img
                                     src={user.image || `https://ui-avatars.com/api/?name=${user.name || 'User'}&background=10b981&color=fff`} 
                                     alt="User Avatar" 
                                     className="h-8 w-8 rounded-full border border-separator"
                                 />
+                                </Link> 
                                 <p className="hidden sm:block">Welcome, {user.name}!</p>
                                 <button
                                     className="text-red-500 hover:text-red-600 transition-colors"
