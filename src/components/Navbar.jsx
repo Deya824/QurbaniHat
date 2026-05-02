@@ -29,6 +29,7 @@ const Navbar = () => {
                     <ul className="hidden md:flex items-center gap-6 text-sm font-medium">
                         <li><Link className="hover:text-emerald-500 transition-colors" href="/">Home</Link></li>
                         <li><Link className="hover:text-emerald-500 transition-colors" href="/animals">All Animals</Link></li>
+                        <li><Link className="hover:text-emerald-500 transition-colors" href="/profile">Profile</Link></li>
                         
                     </ul>
 
