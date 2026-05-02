@@ -2,7 +2,7 @@
 import { authClient } from "@/lib/auth-client";
 import {Check} from "@gravity-ui/icons";
 import {Button, Description, FieldError, Form, Input, Label, TextField} from "@heroui/react";
-const SingUpPage = () => {
+const RegisterPage = () => {
     const onSubmit = async(e) => {
      e.preventDefault();
     const formData = new FormData(e.currentTarget);
@@ -97,4 +97,4 @@ const SingUpPage = () => {
     );
 };
 
-export default SingUpPage;
+export default RegisterPage;

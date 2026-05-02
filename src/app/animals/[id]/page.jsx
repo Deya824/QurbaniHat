@@ -18,7 +18,7 @@ const AnimalsDetailspage = async ({ params }) => {
     const user = session?.user;
     
     if (!user) {
-        redirect('/auth/signin'); 
+       redirect(`/auth/signin?callbackUrl=/animals/${id}`);
     }
 
     if (!animal) {
@@ -46,7 +46,7 @@ const AnimalsDetailspage = async ({ params }) => {
                             {animal.category}
                         </span>
                         <span className="text-sm font-medium text-gray-500">
-                            📍 {animal.location}
+                             {animal.location}
                         </span>
                     </div>
 

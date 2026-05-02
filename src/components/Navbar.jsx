@@ -55,7 +55,7 @@ const Navbar = () => {
                                 {/* Added Register Button */}
                                 <Link 
                                     className="rounded-md bg-emerald-600 px-4 py-2 text-white hover:bg-emerald-700 transition-colors" 
-                                    href="/auth/signup"
+                                    href="/auth/register"
                                 >
                                     Register
                                 </Link>

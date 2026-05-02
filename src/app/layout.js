@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
         <NextThemeProvider attribute="class" defaultTheme="system" enableSystem>
          <Navbar />
          <Toaster
-            position="bottom-right" 
+            position="top-center" 
             toastOptions={{
               className: 'bg-white text-emerald-900 border border-emerald-100 shadow-lg',
               success: {
