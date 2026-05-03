@@ -3,7 +3,7 @@ import { auth } from "./lib/auth";
 import { headers } from "next/headers";
 
 // Next.js expects the function name to be 'middleware'
-export async function middleware(request) {
+export async function proxy(request) {
   const session = await auth.api.getSession({
     headers: await headers(),
   });
@@ -11,7 +11,7 @@ export async function middleware(request) {
   if (!session) {
     const { pathname } = request.nextUrl;
     
-    // Construct the sign-in URL with the callback path
+    
     const signInUrl = new URL('/auth/signin', request.url);
     signInUrl.searchParams.set('callbackUrl', pathname);
     
@@ -23,5 +23,5 @@ export async function middleware(request) {
 
 export const config = {
   // Use :path* to cover all sub-routes of /animals
-  matcher: ["/profile", "/animals/:path*"],
+  matcher: ["/profile", "/animals/:path"],
 };
